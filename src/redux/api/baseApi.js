@@ -1,0 +1,64 @@
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+
+export const baseApi = createApi({
+  reducerPath: "baseApi",
+  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/api/v1" }),
+  tagTypes: ["adddonation"],
+  endpoints: (builder) => ({
+    getAllDonatesPost: builder.query({
+      query: () => "/donations",
+      providesTags: ["adddonation"],
+    }),
+    getSingleDonatesPost: builder.query({
+      query: (id) => `/donations/${id}`,
+    }),
+    createDonation: builder.mutation({
+      query: (donationData) => ({
+        url: "/donations",
+        method: "POST",
+        body: donationData,
+      }),
+      invalidatesTags: ["adddonation"],
+    }),
+    deleteDonation: builder.mutation({
+      query: (id) => ({
+        url: `/donations/${id}`,
+        method: "DELETE",
+      }),
+      invalidatesTags: ["adddonation"],
+    }),
+
+    updateDonation: builder.mutation({
+      query: ({ id, updatedData }) => ({
+        url: `/donations/${id}`,
+        method: "PUT",
+        body: updatedData,
+      }),
+      invalidatesTags: ["adddonation"],
+    }),
+
+    registerUser: builder.mutation({
+      query: (userData) => ({
+        url: "/register",
+        method: "POST",
+        body: userData,
+      }),
+    }),
+    loginUser: builder.mutation({
+      query: ({ email, password }) => ({
+        url: "/login",
+        method: "POST",
+        body: { email, password },
+      }),
+    }),
+  }),
+});
+
+export const {
+  useGetAllDonatesPostQuery,
+  useGetSingleDonatesPostQuery,
+  useRegisterUserMutation,
+  useLoginUserMutation,
+  useCreateDonationMutation,
+  useDeleteDonationMutation,
+} = baseApi;

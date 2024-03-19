@@ -1,0 +1,80 @@
+/src
+  /components
+    /common
+      Header.js
+      Navbar.js
+      Footer.js
+      Banner.js
+      Carousel.js
+      Testimonials.js
+      Summary.js
+      DonationCard.js
+      DonationDetail.js
+      LoginForm.js
+      RegisterForm.js
+      DonationForm.js
+      PieChart.js
+      DonationTable.js
+    /auth
+      Login.js
+      Register.js
+    /dashboard
+      Dashboard.js
+      AllDonations.js
+      CreateDonation.js
+  /pages
+    Home.js
+    AllDonationsPage.js
+    DonationDetailPage.js
+    LoginPage.js
+    RegisterPage.js
+    DashboardHomePage.js
+    DashboardAllDonationsPage.js
+    DashboardCreateDonationPage.js
+  /redux
+    /actions
+      actionTypes.js
+      donationActions.js
+      authActions.js
+    /reducers
+      donationReducer.js
+      authReducer.js
+    /middleware
+      api.js
+    /selectors
+      donationSelectors.js
+      authSelectors.js
+    store.js
+  /services
+    donationService.js
+    authService.js
+  /utils
+    animations.js
+    apiRoutes.js
+    validation.js
+  App.js
+  index.js
+
+
+Explanation:
+
+components: Contains reusable UI components used throughout the application.
+common: Common UI components like Header, Navbar, Footer, etc.
+auth: Components related to authentication like Login and Register forms.
+dashboard: Components specific to the dashboard interface.
+pages: Contains components representing different pages/routes of the application.
+redux: Contains Redux-related files for state management.
+actions: Redux action creators.
+reducers: Redux reducers.
+middleware: Redux middleware for handling API requests.
+selectors: Redux selectors for accessing state.
+store.js: Redux store configuration.
+services: Contains service files responsible for interacting with backend APIs.
+utils: Utility functions and constants used throughout the application.
+App.js: Root component of the application.
+index.js: Entry point of the application.
+You can further organize or adjust this structure based on your project's specific needs and preferences.
+
+
+
+
