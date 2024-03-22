@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const VolunteerOpportunities = () => {
+  const theme = useSelector((state) => state.toggle.theme);
   const opportunities = [
     {
       title: "On-the-Ground Assistance",
@@ -49,12 +51,10 @@ const VolunteerOpportunities = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-16">
+    <div className={`black ${theme} py-16`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900">
-            Volunteer Opportunities
-          </h2>
+          <h2 className="text-3xl font-extrabold ">Volunteer Opportunities</h2>
         </div>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {opportunities.map((opportunity, index) => (
@@ -73,16 +73,17 @@ const VolunteerOpportunities = () => {
 };
 
 const Opportunity = ({ title, description, imageSrc, alt }) => {
+  const theme = useSelector((state) => state.toggle.theme);
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="bg-white overflow-hidden shadow rounded-lg"
+      className={`card ${theme} overflow-hidden shadow rounded-lg`}
     >
       <img className="w-full h-56 object-cover" src={imageSrc} alt={alt} />
       <div className="px-4 py-5 sm:px-6">
-        <h3 className="text-lg font-medium text-gray-900">{title}</h3>
-        <p className="mt-2 text-sm text-gray-600">{description}</p>
+        <h3 className="text-lg font-medium ">{title}</h3>
+        <p className="mt-2 text-sm ">{description}</p>
       </div>
     </motion.div>
   );

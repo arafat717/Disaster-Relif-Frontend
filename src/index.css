@@ -43,3 +43,49 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+/* for dark and light mode design */
+
+.mode.light {
+  color: #111;
+}
+
+.mode.dark {
+  color: #ffffff;
+}
+
+.bg.dark {
+  background-color: white;
+}
+
+.black.dark {
+  background-color: #121212;
+}
+
+.card.dark {
+  background-color: #1a1919;
+}
+
+.text.dark {
+  color: #121212;
+}
+
+.white.dark {
+  color: white;
+}
+
+.hover.dark :hover {
+  border: #ef1721;
+}
+
+/* Default light theme styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark theme styles */
+[data-theme="dark"] body {
+  background-color: #121212;
+  color: #ffffff;
+}

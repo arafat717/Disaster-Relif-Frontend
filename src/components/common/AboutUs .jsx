@@ -32,7 +32,7 @@ const AboutUs = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={controls}
               transition={{ duration: 1.5 }}
-              className="hover:bg-cyan-300 duration-500 p-4 rounded-lg"
+              className="hover:bg-cyan-300 hover:text-black duration-500 p-4 rounded-lg"
             >
               <h3 className="text-xl font-bold mb-4 text-center">
                 Our Mission:
@@ -55,7 +55,7 @@ const AboutUs = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={controls}
                 transition={{ duration: 1.5, delay: 0.4 }}
-                className="hover:bg-cyan-300 duration-500 p-4 rounded-lg"
+                className="hover:bg-cyan-300 hover:text-black  duration-500 p-4 rounded-lg"
               >
                 <h3 className="text-xl font-bold mb-4">Our Objectives:</h3>
                 <ul className="list-disc pl-6">
@@ -80,7 +80,7 @@ const AboutUs = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={controls}
                 transition={{ duration: 1.5, delay: 0.6 }}
-                className="hover:bg-cyan-300 duration-500 p-4 rounded-lg"
+                className="hover:bg-cyan-300 hover:text-black  duration-500 p-4 rounded-lg"
               >
                 <h3 className="text-xl font-bold mb-4">Our Impact:</h3>
                 <p>
@@ -103,7 +103,7 @@ const AboutUs = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={controls}
               transition={{ duration: 1, delay: 0.6 }}
-              className="hover:bg-cyan-300 duration-500 p-4 rounded-lg"
+              className="hover:bg-cyan-300 hover:text-black  duration-500 p-4 rounded-lg"
             >
               <h3 className="text-xl font-bold mb-4 text-center">
                 Our Approach:
@@ -129,7 +129,7 @@ const AboutUs = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={controls}
               transition={{ duration: 1, delay: 0.8 }}
-              className="hover:bg-cyan-300 duration-500  p-4 rounded-lg"
+              className="hover:bg-cyan-300 hover:text-black  duration-500  p-4 rounded-lg"
             >
               <h3 className="text-xl font-bold mb-4 text-center">
                 How You Can Help:

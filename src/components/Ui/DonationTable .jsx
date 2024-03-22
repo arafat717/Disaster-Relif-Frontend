@@ -4,8 +4,10 @@
 import { useState } from "react";
 import { useDeleteDonationMutation } from "../../redux/api/baseApi";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const DonationTable = ({ data }) => {
+  const theme = useSelector((state) => state.toggle.theme);
   const [deleteConfirmation, setDeleteConfirmation] = useState(null);
   const [deleteDonation, { isLoading }] = useDeleteDonationMutation();
 
@@ -28,36 +30,36 @@ const DonationTable = ({ data }) => {
 
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full divide-y divide-gray-200">
-        <thead className="bg-gray-50">
+      <table className={`min-w-full divide-y`}>
+        <thead className={`bg-gray-50 black ${theme}`}>
           <tr>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th className="px-6 py-3 text-left text-xs font-medium  uppercase tracking-wider">
               Title
             </th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th className="px-6 py-3 text-left text-xs font-medium  uppercase tracking-wider">
               Category
             </th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th className="px-6 py-3 text-left text-xs font-medium  uppercase tracking-wider">
               Amount
             </th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th className="px-6 py-3 text-left text-xs font-medium  uppercase tracking-wider">
               Actions
             </th>
           </tr>
         </thead>
-        <tbody className="bg-white divide-y divide-gray-200">
+        <tbody className={` divide-y divide-gray-200 `}>
           {data?.map((post) => (
             <tr key={post._id}>
               <td className="px-6 py-4 whitespace-nowrap">
-                <div className="text-sm font-medium text-gray-900">
+                <div className={`text-sm font-medium white ${theme}`}>
                   {post.title}
                 </div>
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
-                <div className="text-sm text-gray-900">{post.category}</div>
+                <div className={`text-sm white ${theme}`}>{post.category}</div>
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
-                <div className="text-sm text-gray-900">{post.amount}</div>
+                <div className={`text-sm white ${theme}`}>{post.amount}</div>
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-left text-sm font-medium">
                 <button className="mr-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">

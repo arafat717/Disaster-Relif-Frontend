@@ -2,6 +2,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { baseApi } from "./api/baseApi";
 import authReducer from "./auth/authSlice";
+import toggleReducer from "./toggle/toggleSlice";
 import {
   persistStore,
   persistReducer,
@@ -25,6 +26,7 @@ export const store = configureStore({
   reducer: {
     [baseApi.reducerPath]: baseApi.reducer,
     auth: persistAuthReducer,
+    toggle: toggleReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

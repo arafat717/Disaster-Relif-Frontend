@@ -11,6 +11,7 @@ import ProtectedRoute from "../layouts/ProtectedRoute";
 import AllDonationsTable from "../components/Dashboard/AllDonationsTable";
 import DashboardHome from "../components/Dashboard/DashboardHome";
 import CreateDonations from "../components/Dashboard/CreateDonations";
+import LeaderBoard from "../pages/LeaderBoard";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/donations",
         element: <AllDonation></AllDonation>,
+      },
+      {
+        path: "/leaderboard",
+        element: <LeaderBoard></LeaderBoard>,
       },
       {
         path: "/donations/:id",

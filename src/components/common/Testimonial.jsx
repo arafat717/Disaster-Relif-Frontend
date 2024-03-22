@@ -10,8 +10,31 @@ const Testimonial = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 4, // Show one slide at a time by default
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 667, // Medium devices (tablets, iPads)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // Medium devices (tablets, iPads)
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024, // Large devices (desktops)
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (

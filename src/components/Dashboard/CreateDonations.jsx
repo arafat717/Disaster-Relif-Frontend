@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { useCreateDonationMutation } from "../../redux/api/baseApi";
 import { toast } from "sonner";
+import { setTheme } from "../../redux/toggle/toggleSlice";
+import { useSelector } from "react-redux";
 
 const DonationForm = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +15,7 @@ const DonationForm = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const theme = useSelector((state) => state.toggle.theme);
 
   const [createDonation, { isLoading }] = useCreateDonationMutation();
 
@@ -73,20 +76,17 @@ const DonationForm = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-10">
+    <div className="max-w-xl min-h-screen mx-auto mt-10">
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        className={`card ${theme} shadow-md rounded px-8 pt-6 pb-8 mb-4`}
       >
         <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="image"
-          >
+          <label className="block  text-sm font-bold mb-2" htmlFor="image">
             Image URL
           </label>
           <input
-            className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+            className={`shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline ${
               errors.image && "border-red-500"
             }`}
             id="image"
@@ -102,14 +102,11 @@ const DonationForm = () => {
           )}
         </div>
         <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="category"
-          >
+          <label className="block  text-sm font-bold mb-2" htmlFor="category">
             Category
           </label>
           <input
-            className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+            className={`shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline ${
               errors.category && "border-red-500"
             }`}
             id="category"
@@ -125,14 +122,11 @@ const DonationForm = () => {
           )}
         </div>
         <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="title"
-          >
+          <label className="block  text-sm font-bold mb-2" htmlFor="title">
             Title
           </label>
           <input
-            className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+            className={`shadow appearance-none border  rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline ${
               errors.title && "border-red-500"
             }`}
             id="title"
@@ -148,14 +142,11 @@ const DonationForm = () => {
           )}
         </div>
         <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="amount"
-          >
+          <label className="block  text-sm font-bold mb-2" htmlFor="amount">
             Amount
           </label>
           <input
-            className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+            className={`shadow appearance-none border  rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline ${
               errors.amount && "border-red-500"
             }`}
             id="amount"
@@ -172,13 +163,13 @@ const DonationForm = () => {
         </div>
         <div className="mb-6">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block  text-sm font-bold mb-2"
             htmlFor="description"
           >
             Description
           </label>
           <textarea
-            className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+            className={`shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline ${
               errors.description && "border-red-500"
             }`}
             id="description"

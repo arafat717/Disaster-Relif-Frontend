@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { logout } from "../../redux/auth/authSlice";
 import { toast } from "sonner";
 
 const Dashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const theme = useSelector((state) => state.toggle.theme);
   const navigate = useNavigate();
 
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-gray-100">
+    <div className={`flex flex-col min-h-screen black ${theme}`}>
       {/* Sidebar toggle icon for mobile */}
       <div className="md:hidden">
         <button

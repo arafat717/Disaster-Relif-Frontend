@@ -1,0 +1,142 @@
+[
+  {
+    "name": "John Smith",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 100,
+    "description": "Donated to support local animal shelter.",
+    "category": "Animal Welfare"
+  },
+  {
+    "name": "Emma Johnson",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 50,
+    "description": "Contributed towards community garden project.",
+    "category": "Environmental Conservation"
+  },
+  {
+    "name": "Michael Brown",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 2000,
+    "description": "Donation for children's education program.",
+    "category": "Education"
+  },
+  {
+    "name": "Sarah Wilson",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 150,
+    "description": "Supporting local food bank with a generous donation.",
+    "category": "Food Security"
+  },
+  {
+    "name": "David Miller",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 75,
+    "description": "Donated to fund clean water projects in developing countries.",
+    "category": "Water Sanitation"
+  },
+  {
+    "name": "Olivia Davis",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 120,
+    "description": "Supporting arts education in underserved communities.",
+    "category": "Arts & Culture"
+  },
+  {
+    "name": "James Wilson",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 80,
+    "description": "Contributed towards disaster relief efforts.",
+    "category": "Disaster Relief"
+  },
+  {
+    "name": "Emily Anderson",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 100,
+    "description": "Donated to provide medical supplies to remote clinics.",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Daniel Martinez",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 60,
+    "description": "Supporting environmental conservation initiatives.",
+    "category": "Environmental Conservation"
+  },
+  {
+    "name": "Sophia Taylor",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 180,
+    "description": "Donation for homeless shelter renovation project.",
+    "category": "Homelessness"
+  },
+  {
+    "name": "Matthew Thomas",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 1500,
+    "description": "Contributed towards cancer research.",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Ava Garcia",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 1200,
+    "description": "Supporting LGBTQ+ youth programs.",
+    "category": "Social Justice"
+  },
+  {
+    "name": "Christopher Hernandez",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 2500,
+    "description": "Donated to provide clean energy solutions in rural areas.",
+    "category": "Renewable Energy"
+  },
+  {
+    "name": "Madison Lopez",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 1800,
+    "description": "Contributed towards scholarships for underprivileged students.",
+    "category": "Education"
+  },
+  {
+    "name": "William King",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 1100,
+    "description": "Supporting refugee resettlement programs.",
+    "category": "Humanitarian Aid"
+  },
+  {
+    "name": "Abigail Scott",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 1300,
+    "description": "Donated to support mental health awareness campaigns.",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Jacob Green",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 1400,
+    "description": "Contributed towards animal welfare projects.",
+    "category": "Animal Welfare"
+  },
+  {
+    "name": "Ella Baker",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 1600,
+    "description": "Supporting literacy programs in underfunded schools.",
+    "category": "Education"
+  },
+  {
+    "name": "Alexander Young",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 2200,
+    "description": "Donated to support renewable energy initiatives.",
+    "category": "Renewable Energy"
+  },
+  {
+    "name": "Grace Hill",
+    "image": "https://media.istockphoto.com/id/487153596/photo/local-students-in-cambodia.jpg?s=1024x1024&w=is&k=20&c=MiieMjlY_Sb7pxeqxCZALdpYuW3ud3ZNgL3_gS2D8Lk=",
+    "amount": 1700,
+    "description": "Contributed towards community health clinic expansion.",
+    "category": "Healthcare"
+  }
+]

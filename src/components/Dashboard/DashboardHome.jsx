@@ -29,12 +29,21 @@ const COLORS = [
 ];
 
 const DashboardHome = () => {
-  const { data: chartData } = useGetAllDonatesPostQuery("");
+  const {
+    data: chartData,
+    isLoading,
+    isError,
+  } = useGetAllDonatesPostQuery(undefined);
 
-  const pieChartData = chartData?.map((data) => {
-    return { name: data.category, value: parseFloat(data.amount) };
-  });
-  console.log(pieChartData);
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>Error fetching data</div>;
+  if (!chartData) return <div>No data available</div>;
+
+  const pieChartData = chartData?.map((data) => ({
+    name: data?.category,
+    value: parseFloat(data?.amount),
+  }));
+  console.log("Pie Chart Data:", pieChartData);
 
   const RADIAN = Math.PI / 180;
   const renderCustomizedLabel = ({
@@ -63,9 +72,9 @@ const DashboardHome = () => {
   };
 
   return (
-    <ResponsiveContainer width="100%" height="80%">
-      <PieChart width={700} height={700}>
-        <Legend></Legend>
+    <ResponsiveContainer width="100%" height={800}>
+      <PieChart>
+        <Legend />
         <Pie
           data={pieChartData}
           cx="50%"
