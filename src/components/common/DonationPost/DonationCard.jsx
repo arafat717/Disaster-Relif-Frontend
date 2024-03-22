@@ -6,7 +6,6 @@ import Button from "../../../utils/Button";
 import Card from "../../Ui/Card";
 import ComponentsTitle from "../../shared/ComponentsTitle";
 
-/* eslint-disable react/prop-types */
 const DonationCard = () => {
   const { data } = useGetAllDonatesPostQuery("");
   const [isVisible, setIsVisible] = useState(false);
