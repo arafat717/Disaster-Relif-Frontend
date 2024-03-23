@@ -106,6 +106,14 @@ const Dashboard = () => {
                 Create-Donation
               </Link>
             </li>
+            <li>
+              <Link
+                to="/dashboard/create-testimonial"
+                className="block py-2 px-2 text-sm hover:bg-gray-800 rounded-md"
+              >
+                create-testimonial
+              </Link>
+            </li>
           </ul>
         </div>
         <hr />
@@ -126,6 +134,22 @@ const Dashboard = () => {
                 className="block py-2 px-2 text-sm hover:bg-gray-800 rounded-md"
               >
                 All Donation post
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/leaderboard"
+                className="block py-2 px-2 text-sm hover:bg-gray-800 rounded-md"
+              >
+                Leaderboard
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/community"
+                className="block py-2 px-2 text-sm hover:bg-gray-800 rounded-md"
+              >
+                Community
               </Link>
             </li>
           </ul>

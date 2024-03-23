@@ -11,7 +11,7 @@ const Testimonial = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4, // Show one slide at a time by default
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 667, // Medium devices (tablets, iPads)

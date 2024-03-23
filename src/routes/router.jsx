@@ -12,6 +12,9 @@ import AllDonationsTable from "../components/Dashboard/AllDonationsTable";
 import DashboardHome from "../components/Dashboard/DashboardHome";
 import CreateDonations from "../components/Dashboard/CreateDonations";
 import LeaderBoard from "../pages/LeaderBoard";
+import Community from "../pages/Community/Community";
+import Volunteer from "../pages/Volunteer/Volunteer";
+import CreateTestominal from "../components/Dashboard/CreateTestominal";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "leaderboard",
         element: <LeaderBoard></LeaderBoard>,
+      },
+      {
+        path: "community",
+        element: <Community></Community>,
+      },
+      {
+        path: "volunteer",
+        element: <Volunteer></Volunteer>,
       },
       {
         path: "donations/:id",
@@ -67,6 +78,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/create-donation",
         element: <CreateDonations></CreateDonations>,
+      },
+      {
+        path: "/dashboard/create-testimonial",
+        element: <CreateTestominal></CreateTestominal>,
       },
     ],
   },

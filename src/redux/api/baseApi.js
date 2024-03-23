@@ -5,7 +5,7 @@ export const baseApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "http://localhost:5000/api/v1",
   }),
-  tagTypes: ["adddonation"],
+  tagTypes: ["adddonation", "addcomment", "volunteerData", "testominalData"],
   endpoints: (builder) => ({
     getAllDonatesPost: builder.query({
       query: () => "/donations",
@@ -58,6 +58,42 @@ export const baseApi = createApi({
       query: () => "/doners",
       method: "GET",
     }),
+    createComment: builder.mutation({
+      query: (commentData) => ({
+        url: "/community",
+        method: "POST",
+        body: commentData,
+      }),
+      invalidatesTags: ["addcomment"],
+    }),
+    getCommunity: builder.query({
+      query: () => "/community",
+      providesTags: ["addcomment"],
+    }),
+    createVolunteer: builder.mutation({
+      query: (volunteerData) => ({
+        url: "/volunteer",
+        method: "POST",
+        body: volunteerData,
+      }),
+      invalidatesTags: ["volunteerData"],
+    }),
+    getVolunteer: builder.query({
+      query: () => "/volunteer",
+      providesTags: ["volunteerData"],
+    }),
+    createTestominal: builder.mutation({
+      query: (volunteerData) => ({
+        url: "/testominal",
+        method: "POST",
+        body: volunteerData,
+      }),
+      invalidatesTags: ["testominalData"],
+    }),
+    getTestominal: builder.query({
+      query: () => "/testominal",
+      providesTags: ["testominalData"],
+    }),
   }),
 });
 
@@ -69,4 +105,10 @@ export const {
   useCreateDonationMutation,
   useDeleteDonationMutation,
   useGetAllDonerQuery,
+  useCreateCommentMutation,
+  useGetCommunityQuery,
+  useCreateVolunteerMutation,
+  useGetVolunteerQuery,
+  useCreateTestominalMutation,
+  useGetTestominalQuery,
 } = baseApi;

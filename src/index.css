@@ -70,6 +70,10 @@
   color: #121212;
 }
 
+.comment.dark {
+  color: antiquewhite;
+}
+
 .white.dark {
   color: white;
 }
@@ -88,4 +92,32 @@ body {
 [data-theme="dark"] body {
   background-color: #121212;
   color: #ffffff;
+}
+
+/* DynamicTestimonial.css */
+
+.testimonial-container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.testimonial-slide {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  padding: 20px;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 16px;
+  font-style: italic;
 }

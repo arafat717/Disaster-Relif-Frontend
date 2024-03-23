@@ -1,5 +1,7 @@
 import Carousel from "../components/Carousel";
 import OurService from "../components/OurService";
+import DynamicTestomonal from "../components/Ui/DynamicTestomonal";
+import VolunteerList from "../components/Ui/VolunteerList";
 import AboutUs from "../components/common/AboutUs ";
 import Banner from "../components/common/Banner";
 import DonationCard from "../components/common/DonationPost/DonationCard";
@@ -11,11 +13,13 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <DonationCard></DonationCard>
-      <Testimonial></Testimonial>
       <OurService></OurService>
+      <DynamicTestomonal></DynamicTestomonal>
       <VolunteerOpportunities></VolunteerOpportunities>
       <Carousel></Carousel>
       <AboutUs></AboutUs>
+      <Testimonial></Testimonial>
+      <VolunteerList></VolunteerList>
     </div>
   );
 };

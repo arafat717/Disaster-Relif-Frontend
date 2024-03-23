@@ -34,7 +34,10 @@ const Header = () => {
     { name: "Home", link: "/" },
     { name: "Donations", link: "/donations" },
     ...(token ? [{ name: "Dashboard", link: "/dashboard" }] : []),
-    { name: "Leaderboard", link: "/leaderboard" },
+    ...(token ? [{ name: "Leaderboard", link: "/leaderboard" }] : []),
+    ...(token ? [{ name: "Community", link: "/community" }] : []),
+    ...(token ? [{ name: "About Us", link: "/volunteer" }] : []),
+
     // { name: "ABOUT", link: "/" },
     // { name: "BLOG'S", link: "/" },
     // { name: "CONTACT", link: "/" },
