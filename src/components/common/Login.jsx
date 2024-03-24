@@ -10,8 +10,8 @@ import { toast } from "sonner";
 const Login = () => {
   const navigate = useNavigate();
   const dispathch = useDispatch();
-  const [email, setEmail] = useState("arafatjibon33@gmail.com");
-  const [password, setPassword] = useState("arafatjibon177");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const [loginUser, { isLoading, isError, error }] = useLoginUserMutation();
 

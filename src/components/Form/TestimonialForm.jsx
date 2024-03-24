@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useCreateTestominalMutation } from "../../redux/api/baseApi";
+import { toast } from "sonner";
 
 const TestimonialForm = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +23,6 @@ const TestimonialForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validate form fields
     const errors = {};
     if (!formData.name.trim()) {
       errors.name = "Name is required";
@@ -36,13 +36,9 @@ const TestimonialForm = () => {
       errors.description = "Description is required";
     }
     setErrors(errors);
-
-    // If there are errors, stop form submission
     if (Object.keys(errors).length > 0) {
       return;
     }
-
-    // If no errors, submit the form
     try {
       const res = await createTestimonial({
         name: formData.name,
@@ -51,19 +47,16 @@ const TestimonialForm = () => {
         description: formData.description,
       });
       console.log(res);
-      // Reset form data on successful submission
       setFormData({
         name: "",
         email: "",
         imageUrl: "",
         description: "",
       });
-      // Optionally, show a success message to the user
-      alert("Testimonial submitted successfully!");
+      toast.success("Testimonial submitted successfully!");
     } catch (error) {
       console.error("Error submitting testimonial:", error);
-      // Optionally, show an error message to the user
-      alert("Error submitting testimonial. Please try again later.");
+      toast.errors("Error submitting testimonial. Please try again later.");
     }
   };
 

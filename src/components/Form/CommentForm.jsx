@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { selectCurrentUser } from "../../redux/auth/authSlice";
 import { useState } from "react";
 import { useCreateCommentMutation } from "../../redux/api/baseApi";
+import { toast } from "sonner";
 
 const CommentForm = () => {
   const theme = useSelector((state) => state.toggle.theme);
@@ -38,6 +39,7 @@ const CommentForm = () => {
       // Clear comment field or do any other necessary actions upon successful comment submission
       setComment("");
       setName("");
+      toast.success("Your Post Successful");
     } catch (error) {
       console.error("Comment failed:", error);
       // Handle comment submission error
