@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Button from "../../utils/Button";
 
 const Banner = () => {
   return (
