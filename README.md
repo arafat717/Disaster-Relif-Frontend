@@ -6,7 +6,7 @@ The Post-Disaster Relief Donation Platform is a comprehensive web application ai
 
 ## Live Link
 
-[Live Demo](https://asetta-autos-645ad.web.app/)
+[Live Demo](https://disaster-relif.vercel.app/)
 
 ## Features
 
