@@ -41,7 +41,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="overflow-hidden mb-36 mt-10">
+    <div className="overflow-hidden mb-10 mt-10">
       <div className="px-10 pt-16 grid grid-cols-1 lg:grid-cols-2 place-content-center">
         <motion.div variants={intro} initial="hidden" animate="visible">
           <motion.h1
