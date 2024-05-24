@@ -2,8 +2,8 @@
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { useGetTestominalQuery } from "../../redux/api/baseApi";
 import ComponentsTitle from "../shared/ComponentsTitle";
+import { useGetTestominalQuery } from "../../redux/api/testominalApi";
 
 const DynamicTestimonial = () => {
   const theme = useSelector((state) => state.toggle.theme);

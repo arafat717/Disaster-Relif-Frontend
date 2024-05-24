@@ -6,20 +6,5 @@ export const baseApi = createApi({
     baseUrl: "http://localhost:5000/api/v1",
   }),
   tagTypes: ["adddonation", "addcomment", "volunteerData", "testominalData"],
-  endpoints: (builder) => ({
-    createTestominal: builder.mutation({
-      query: (volunteerData) => ({
-        url: "/testominal",
-        method: "POST",
-        body: volunteerData,
-      }),
-      invalidatesTags: ["testominalData"],
-    }),
-    getTestominal: builder.query({
-      query: () => "/testominal",
-      providesTags: ["testominalData"],
-    }),
-  }),
+  endpoints: () => ({}),
 });
-
-export const { useCreateTestominalMutation, useGetTestominalQuery } = baseApi;
