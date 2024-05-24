@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
+
+* {
+  font-family: "Montaga", serif;
+}
+
 .modal {
   position: fixed;
   top: 0;

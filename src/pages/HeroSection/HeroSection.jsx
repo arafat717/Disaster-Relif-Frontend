@@ -41,7 +41,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="overflow-hidden ">
+    <div className="overflow-hidden mb-36 mt-10">
       <div className="px-10 pt-16 grid grid-cols-1 lg:grid-cols-2 place-content-center">
         <motion.div variants={intro} initial="hidden" animate="visible">
           <motion.h1
@@ -76,8 +76,8 @@ const HeroSection = () => {
           animate="animate"
         >
           <img
-            className="h-full lg:h-[90%] w-full object-contain"
-            src="https://as1.ftcdn.net/v2/jpg/06/41/12/98/1000_F_641129819_l0iqEWBYI8JE2aHmEU5ur4z3dyNzRxmI.jpg"
+            className="h-full lg:h-[70%] w-full object-contain"
+            src="https://img.freepik.com/free-photo/hopeless-refugee-refugee-camp_23-2151446312.jpg?t=st=1716541521~exp=1716545121~hmac=589bf526a50be8a23d025b57ca41435224e491f49b197146f6c1e515a7338dc4&w=740"
             alt=""
           />
         </motion.div>
