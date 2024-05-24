@@ -4,9 +4,9 @@
 
 The Post-Disaster Relief Donation Platform is a comprehensive web application aimed at facilitating post-disaster relief efforts by providing a centralized hub for donations, donor testimonials, and relevant information. The platform utilizes modern web technologies such as React, Redux, RTK Query, and React Router DOM for efficient data management and user navigation.
 
-## Live URL
+## Live Link
 
-The live version of the application can be accessed at [Disaster Relief]((https://disaster-relif.vercel.app/))
+[Live Demo](https://disaster-relif.vercel.app/)
 
 ## Features
 
@@ -43,19 +43,12 @@ The live version of the application can be accessed at [Disaster Relief]((https:
 
 ## Setup Instructions
 
-1. Clone the repository: `git clone <repository-url>`
-2. Navigate to the project directory: `cd disaster-`
+1. Clone the repository: `git clone https://github.com/arafat717/Disaster-Relif-Frontend.git`
+2. Navigate to the project directory: `cd Disaster-Relif-Frontend`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 5. Open your browser and visit `http://localhost:3000` to view the application.
 
-## Contribution Guidelines
-
-- Fork the repository.
-- Create a new branch: `git checkout -b feature-new-feature`
-- Make your changes and commit them: `git commit -am 'Add new feature'`
-- Push to the branch: `git push origin feature-new-feature`
-- Submit a pull request.
 
 ## Credits
 
