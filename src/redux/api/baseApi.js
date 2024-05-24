@@ -7,20 +7,6 @@ export const baseApi = createApi({
   }),
   tagTypes: ["adddonation", "addcomment", "volunteerData", "testominalData"],
   endpoints: (builder) => ({
-    registerUser: builder.mutation({
-      query: (userData) => ({
-        url: "/register",
-        method: "POST",
-        body: userData,
-      }),
-    }),
-    loginUser: builder.mutation({
-      query: ({ email, password }) => ({
-        url: "/login",
-        method: "POST",
-        body: { email, password },
-      }),
-    }),
     getAllDoner: builder.query({
       query: () => "/doners",
       method: "GET",
@@ -65,8 +51,6 @@ export const baseApi = createApi({
 });
 
 export const {
-  useRegisterUserMutation,
-  useLoginUserMutation,
   useGetAllDonerQuery,
   useCreateCommentMutation,
   useGetCommunityQuery,

@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
-import { useRegisterUserMutation } from "../../redux/api/baseApi";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
+import { useRegisterUserMutation } from "../../redux/api/authApi";
 
 const Register = () => {
   const navigate = useNavigate();
