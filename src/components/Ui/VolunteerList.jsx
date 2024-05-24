@@ -1,4 +1,4 @@
-import { useGetVolunteerQuery } from "../../redux/api/baseApi";
+import { useGetVolunteerQuery } from "../../redux/api/volunteerApi";
 import ComponentsTitle from "../shared/ComponentsTitle";
 
 const VolunteerList = () => {

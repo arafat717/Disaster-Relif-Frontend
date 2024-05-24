@@ -23,18 +23,7 @@ export const baseApi = createApi({
       query: () => "/community",
       providesTags: ["addcomment"],
     }),
-    createVolunteer: builder.mutation({
-      query: (volunteerData) => ({
-        url: "/volunteer",
-        method: "POST",
-        body: volunteerData,
-      }),
-      invalidatesTags: ["volunteerData"],
-    }),
-    getVolunteer: builder.query({
-      query: () => "/volunteer",
-      providesTags: ["volunteerData"],
-    }),
+
     createTestominal: builder.mutation({
       query: (volunteerData) => ({
         url: "/testominal",
@@ -54,8 +43,6 @@ export const {
   useGetAllDonerQuery,
   useCreateCommentMutation,
   useGetCommunityQuery,
-  useCreateVolunteerMutation,
-  useGetVolunteerQuery,
   useCreateTestominalMutation,
   useGetTestominalQuery,
 } = baseApi;
