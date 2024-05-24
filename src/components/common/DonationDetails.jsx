@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import { useGetSingleDonatesPostQuery } from "../../redux/api/baseApi";
 import DetailPage from "./DetailPage";
+import { useGetSingleDonatesPostQuery } from "../../redux/api/donatinApi";
 
 const DonationDetails = () => {
   const { id } = useParams();

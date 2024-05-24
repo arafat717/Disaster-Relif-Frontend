@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Card from "../components/Ui/Card";
-import { useGetAllDonatesPostQuery } from "../redux/api/baseApi";
 import { motion } from "framer-motion";
 import ComponentsTitle from "../components/shared/ComponentsTitle";
+import { useGetAllDonatesPostQuery } from "../redux/api/donatinApi";
 
 const AllDonation = () => {
   const { data } = useGetAllDonatesPostQuery("");

@@ -1,5 +1,5 @@
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from "recharts";
-import { useGetAllDonatesPostQuery } from "../../redux/api/baseApi";
+import { useGetAllDonatesPostQuery } from "../../redux/api/donatinApi";
 
 const COLORS = [
   "#0088FE",

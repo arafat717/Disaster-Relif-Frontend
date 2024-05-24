@@ -2,9 +2,9 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { useDeleteDonationMutation } from "../../redux/api/baseApi";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useDeleteDonationMutation } from "../../redux/api/donatinApi";
 
 const DonationTable = ({ data }) => {
   const theme = useSelector((state) => state.toggle.theme);

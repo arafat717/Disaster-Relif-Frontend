@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useGetAllDonatesPostQuery } from "../../../redux/api/baseApi";
 import { motion } from "framer-motion";
 import Button from "../../../utils/Button";
 import Card from "../../Ui/Card";
 import ComponentsTitle from "../../shared/ComponentsTitle";
+import { useGetAllDonatesPostQuery } from "../../../redux/api/donatinApi";
 
 const DonationCard = () => {
   const { data } = useGetAllDonatesPostQuery("");

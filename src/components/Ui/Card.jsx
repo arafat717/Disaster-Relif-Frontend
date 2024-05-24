@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 /* eslint-disable react/prop-types */
 const Card = ({ item }) => {
   const theme = useSelector((state) => state.toggle.theme);
-  console.log(item);
 
   return (
     <div

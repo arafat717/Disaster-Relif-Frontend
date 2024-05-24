@@ -1,4 +1,4 @@
-import { useGetAllDonatesPostQuery } from "../../redux/api/baseApi";
+import { useGetAllDonatesPostQuery } from "../../redux/api/donatinApi";
 import DonationTable from "../Ui/DonationTable ";
 
 const AllDonationsTable = () => {
