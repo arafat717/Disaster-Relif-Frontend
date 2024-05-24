@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import { selectCurrentUser } from "../../redux/auth/authSlice";
 import { useState } from "react";
-import { useCreateCommentMutation } from "../../redux/api/baseApi";
 import { toast } from "sonner";
+import { useCreateCommentMutation } from "../../redux/api/communityApi";
 
 const CommentForm = () => {
   const theme = useSelector((state) => state.toggle.theme);

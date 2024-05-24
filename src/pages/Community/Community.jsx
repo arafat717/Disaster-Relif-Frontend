@@ -1,7 +1,7 @@
 import CommentForm from "../../components/Form/CommentForm";
 import Comment from "../../components/Ui/Comment";
 import Gallery from "../../components/Ui/Gallary";
-import { useGetCommunityQuery } from "../../redux/api/baseApi";
+import { useGetCommunityQuery } from "../../redux/api/communityApi";
 
 const Community = () => {
   const { data: comments } = useGetCommunityQuery("");

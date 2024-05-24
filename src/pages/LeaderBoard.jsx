@@ -1,4 +1,4 @@
-import { useGetAllDonerQuery } from "../redux/api/baseApi";
+import { useGetAllDonerQuery } from "../redux/api/donatinApi";
 
 const Leaderboard = () => {
   const {

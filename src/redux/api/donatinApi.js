@@ -33,6 +33,10 @@ const donationApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: ["adddonation"],
     }),
+    getAllDoner: builder.query({
+      query: () => "/doners",
+      method: "GET",
+    }),
   }),
 });
 
@@ -42,4 +46,5 @@ export const {
   useDeleteDonationMutation,
   useUpdateDonationMutation,
   useGetSingleDonatesPostQuery,
+  useGetAllDonerQuery,
 } = donationApi;
