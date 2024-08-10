@@ -12,14 +12,17 @@ const Home = () => {
   return (
     <div>
       <HeroSection></HeroSection>
+
       <DonationCard></DonationCard>
-      <OurService></OurService>
-      <DynamicTestomonal></DynamicTestomonal>
-      <VolunteerOpportunities></VolunteerOpportunities>
-      <Carousel></Carousel>
-      <AboutUs></AboutUs>
-      <Testimonial></Testimonial>
-      <VolunteerList></VolunteerList>
+      <div className="max-w-[1250px] mx-auto">
+        <OurService></OurService>
+        <DynamicTestomonal></DynamicTestomonal>
+        <VolunteerOpportunities></VolunteerOpportunities>
+        <Carousel></Carousel>
+        <AboutUs></AboutUs>
+        <Testimonial></Testimonial>
+        <VolunteerList></VolunteerList>
+      </div>
     </div>
   );
 };

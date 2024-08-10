@@ -10,7 +10,12 @@ const VolunteerList = () => {
   } = useGetVolunteerQuery(undefined);
 
   if (isLoading) return <div className="text-center mt-4">Loading...</div>;
-  if (isError) return <div className="text-center mt-4">Error: {error}</div>;
+  if (isError)
+    return (
+      <div className="text-center mt-4">
+        Error: {error?.message || "An unexpected error occurred."}
+      </div>
+    );
 
   return (
     <div className="my-10">
