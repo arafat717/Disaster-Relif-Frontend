@@ -4,9 +4,9 @@ import { useGetAllDonatesPostQuery } from "../redux/api/donatinApi";
 
 const AllDonation = () => {
   const { data } = useGetAllDonatesPostQuery("");
-  console.log(data);
+
   return (
-    <div id="donationCard">
+    <div className="bg-slate-100 -mt-8 py-10">
       <ComponentsTitle
         topTitle="donations"
         boldblackTitle="all donations"

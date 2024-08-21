@@ -22,6 +22,7 @@ const Login = () => {
       const { data } = await loginUser({ email, password });
 
       const user = VarifayToken(data.token);
+      console.log(user);
 
       dispathch(setUser({ user: user, token: data.token }));
       toast.success("Login Successful");

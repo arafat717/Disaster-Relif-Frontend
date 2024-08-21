@@ -1,5 +1,8 @@
 import Carousel from "../components/Carousel";
+import DisasterNews from "../components/DisasterNews/DisasterNews";
 import OurService from "../components/OurService";
+import OurShopArea from "../components/OurShopArea/OurShopArea";
+import OurStatistic from "../components/OurStatistic/OurStatistic";
 import DynamicTestomonal from "../components/Ui/DynamicTestomonal";
 import VolunteerList from "../components/Ui/VolunteerList";
 import AboutUs from "../components/common/AboutUs ";
@@ -14,8 +17,13 @@ const Home = () => {
       <HeroSection></HeroSection>
 
       <DonationCard></DonationCard>
+      <OurService></OurService>
       <div className="max-w-[1250px] mx-auto">
-        <OurService></OurService>
+        <OurShopArea></OurShopArea>
+        <DisasterNews></DisasterNews>
+      </div>
+      <OurStatistic></OurStatistic>
+      <div className="max-w-[1250px] mx-auto">
         <DynamicTestomonal></DynamicTestomonal>
         <VolunteerOpportunities></VolunteerOpportunities>
         <Carousel></Carousel>

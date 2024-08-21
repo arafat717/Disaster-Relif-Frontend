@@ -33,10 +33,10 @@ const Header = () => {
   let Links = [
     { name: "Home", link: "/" },
     { name: "Donations", link: "/donations" },
+    { name: "Leaderboard", link: "/leaderboard" },
+    { name: "Community", link: "/community" },
+    { name: "About Us", link: "/volunteer" },
     ...(token ? [{ name: "Dashboard", link: "/dashboard" }] : []),
-    ...(token ? [{ name: "Leaderboard", link: "/leaderboard" }] : []),
-    ...(token ? [{ name: "Community", link: "/community" }] : []),
-    ...(token ? [{ name: "About Us", link: "/volunteer" }] : []),
 
     // { name: "ABOUT", link: "/" },
     // { name: "BLOG'S", link: "/" },

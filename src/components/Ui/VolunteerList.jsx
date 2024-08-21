@@ -1,5 +1,5 @@
 import { useGetVolunteerQuery } from "../../redux/api/volunteerApi";
-import ComponentsTitle from "../shared/ComponentsTitle";
+import VolunteerCard from "./VolunteerCard";
 
 const VolunteerList = () => {
   const {
@@ -19,39 +19,25 @@ const VolunteerList = () => {
 
   return (
     <div className="my-10">
-      <ComponentsTitle
-        topTitle="donations"
-        boldblackTitle="Our Volunteers"
-      ></ComponentsTitle>
+      <div className="text-center">
+        <p className="italic text-black">We Are Fighting For your Rights</p>
+        <h1 className="text-5xl font-bold text-gray-950 mt-1">
+          Meet Our Volunteer
+        </h1>
+        <div className="mx-auto w-12 mt-6 mb-5">
+          <hr className="my-1 border border-cyan-500" />
+          <hr className="border border-cyan-500" />
+        </div>
+        <p className="text-gray-400">
+          Praising pain was born and I will give you a complete accountwill give
+          you a complete <br /> account
+        </p>
+      </div>
       <div className="container mx-auto my-15 p-4">
         <div className="grid grid-cols-2 px-1 sm:grid-cols-3 md:grid-cols-5 mx-auto gap-4 sm:px-0 sm:gap-2 md:px-14 mt-10">
-          {volunteerData &&
-            volunteerData?.map((volunteer) => (
-              <div
-                key={volunteer.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 inline-block max-w-min"
-              >
-                {volunteer.image && (
-                  <img
-                    src={volunteer.image}
-                    alt={volunteer.name}
-                    className="h-24 object-cover object-center w-full"
-                  />
-                )}
-                <div className="p-2">
-                  <h3 className="text-sm font-bold mb-1">{volunteer.name}</h3>
-                  <p className="text-gray-700 text-xs mb-1">
-                    Email: {volunteer.email}
-                  </p>
-                  <p className="text-gray-700 text-xs mb-1">
-                    Phone: {volunteer.phone}
-                  </p>
-                  <p className="text-gray-700 text-xs mb-1">
-                    Location: {volunteer.location}
-                  </p>
-                </div>
-              </div>
-            ))}
+          {volunteerData?.slice(0, 4).map((volunter) => (
+            <VolunteerCard key={volunter._id} data={volunter}></VolunteerCard>
+          ))}
         </div>
       </div>
     </div>
