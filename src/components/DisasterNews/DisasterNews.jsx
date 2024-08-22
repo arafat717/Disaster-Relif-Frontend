@@ -12,7 +12,7 @@ const DisasterNews = () => {
       <div className="text-center">
         <p className="italic text-black">We Are Fighting For your Rights</p>
         <h1 className="text-5xl font-bold text-gray-950 mt-1">Disaster News</h1>
-        <div className="mx-auto w-12 mt-6 mb-5">
+        <div className="mx-auto w-12 mt-3 mb-3">
           <hr className="my-1 border border-cyan-500" />
           <hr className="border border-cyan-500" />
         </div>

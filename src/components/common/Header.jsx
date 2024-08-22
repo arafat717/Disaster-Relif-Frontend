@@ -45,9 +45,9 @@ const Header = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full left-0 top-0 z-10 sticky">
+    <div className="shadow-md w-full left-0 top-0 z-20 sticky">
       <div
-        className={`md:flex black ${theme} bg-white items-center justify-between  py-4 md:px-10 px-7`}
+        className={` md:flex black ${theme} bg-white items-center justify-between  py-4 md:px-10 px-7`}
       >
         <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
           <span className="text-3xl text-indigo-600 mr-1 pt-2">

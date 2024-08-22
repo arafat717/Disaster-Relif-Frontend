@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SlideCard from "../Ui/SlideCard";
-import ComponentsTitle from "../shared/ComponentsTitle";
 
 const Testimonial = () => {
   const settings = {
@@ -39,11 +38,19 @@ const Testimonial = () => {
 
   return (
     <div className="w-5/6 m-auto mb-20 mt-20">
-      <ComponentsTitle
-        topTitle="top Donor "
-        boldblackTitle="donor of us"
-      ></ComponentsTitle>
-      <div className="mt-20">
+      <div className="text-center mt-20">
+        <p className="italic text-black">We Are Fighting For your Rights</p>
+        <h1 className="text-5xl font-bold text-gray-950 mt-1">donor of us</h1>
+        <div className="mx-auto w-12 mt-3 mb-3">
+          <hr className="my-1 border border-cyan-500" />
+          <hr className="border border-cyan-500" />
+        </div>
+        <p className="text-gray-400">
+          Praising pain was born and I will give you a complete accountwill give
+          you a complete <br /> account
+        </p>
+      </div>
+      <div className="mt-4">
         <Slider {...settings}>
           {data.map((item) => (
             <SlideCard key={item.id} item={item}></SlideCard>

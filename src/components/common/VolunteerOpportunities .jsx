@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
-import ComponentsTitle from "../shared/ComponentsTitle";
 
 const VolunteerOpportunities = () => {
   const theme = useSelector((state) => state.toggle.theme);
@@ -59,11 +58,22 @@ const VolunteerOpportunities = () => {
 
   return (
     <>
-      <ComponentsTitle
-        topTitle="Volunteer"
-        boldblackTitle="Volunteer Opportunities"
-      ></ComponentsTitle>
-      <div className={`black ${theme} py-10 mb-16`}>
+      <div className="text-center mt-20">
+        <p className="italic text-black">We Are Fighting For your Rights</p>
+        <h1 className="text-5xl font-bold text-gray-950 mt-1">
+          Volunteer Opportunities
+        </h1>
+        <div className="mx-auto w-12 mt-3 mb-3">
+          <hr className="my-1 border border-cyan-500" />
+          <hr className="border border-cyan-500" />
+        </div>
+        <p className="text-gray-400">
+          Praising pain was born and I will give you a complete accountwill give
+          you a complete <br /> account
+        </p>
+      </div>
+
+      <div className={`black ${theme}  mb-16`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {opportunities.map((opportunity, index) => (

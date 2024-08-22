@@ -10,11 +10,21 @@ const DynamicTestimonial = () => {
   const { data } = useGetTestominalQuery(undefined);
 
   return (
-    <div>
-      <ComponentsTitle
-        topTitle="Disaster Relief"
-        boldblackTitle="Testominals of Donation"
-      ></ComponentsTitle>
+    <div className="mt-20">
+      <div className="text-center">
+        <p className="italic text-black">We Are Fighting For your Rights</p>
+        <h1 className="text-5xl font-bold text-gray-950 mt-1">
+          Meet Our Top Donars
+        </h1>
+        <div className="mx-auto w-12 mt-3 mb-3">
+          <hr className="my-1 border border-cyan-500" />
+          <hr className="border border-cyan-500" />
+        </div>
+        <p className="text-gray-400">
+          Praising pain was born and I will give you a complete accountwill give
+          you a complete <br /> account
+        </p>
+      </div>
       <div className="testimonial-container">
         <Swiper
           spaceBetween={50}
